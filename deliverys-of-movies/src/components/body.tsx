@@ -1,19 +1,17 @@
-import React, { Component } from "react"
-import { getMovies } from "../services/movies"
+import Movies from "./movies/movies"
+import Shows from "./shows/shows"
 
-class Body extends Component{
-    
-    render(){
+function Body () {
 
         return(
-            
+
             <div id="body">
                 <div className="row">
                 <div className="col-sm-6">
                     <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">Películas populares</h5>
-
+                        <Movies />
                     </div>
                     </div>
                 </div>
@@ -21,7 +19,7 @@ class Body extends Component{
                     <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">Series populares</h5>
-                        
+                        <Shows />
                     </div>
                     </div>
                 </div>
@@ -29,7 +27,6 @@ class Body extends Component{
 
             </div>                  
         )
-    }
 }
 
 export default Body

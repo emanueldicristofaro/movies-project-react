@@ -1,75 +1,63 @@
-import React, { Component } from "react"
 import logo from '../assets/img/banner.png';
 
-class Footer extends Component{
+function Footer(){
     /**
      * Estructura del footer
      * @returns footer
      */
-    render(){
-        return(
-            <div id="footer">
-                <footer className="footer-distributed">
+    return(
+        <div id="footer">
+            <footer className="footer-distributed">
 
-                        <div className="footer-left">
+                    <div className="footer-left">
 
-                            <h1 className="logo"><img src={logo} alt="Delivery's of Movies logo"/></h1>
+                        <h1 className="logo"><img src={logo} alt="Delivery's of Movies logo"/></h1>
 
-                            <p className="footer-links">
-                                
-                                <a href="#1" className="link-1">Inicio</a>
-                            
-                                <a href="#4">Sobre nosotros</a>
-                                
-                                <a href="#5">Contacto</a>
-                            </p>
+                        <p className="footer-company-name">Delivery's of Movies © 2022</p>
+                    </div>
 
-                            <p className="footer-company-name">Delivery's of Movies © 2022</p>
+                    <div className="footer-center">
+
+                        <div>
+                            <i className="fa fa-map-marker"></i>
+                            <p><span>Los Lagos, Puerto Montt</span> Chile 🇨🇱</p>
                         </div>
 
-                        <div className="footer-center">
-
-                            <div>
-                                <i className="fa fa-map-marker"></i>
-                                <p><span>Los Lagos, Puerto Montt</span> Chile 🇨🇱</p>
-                            </div>
-
-                            <div>
-                                <i className="fa fa-phone"></i>
-                                <p>+9 9999-9999</p>
-                            </div>
-
-                            <div>
-                                <i className="fa fa-envelope"></i>
-                                <p><a href="#s">support@deliverysofmovies.com</a></p>
-                            </div>
-
+                        <div>
+                            <i className="fa fa-phone"></i>
+                            <p>+9 9999-9999</p>
                         </div>
 
-                        <div className="footer-right">
+                        <div>
+                            <i className="fa fa-envelope"></i>
+                            <p><a href="#s">support@deliverysofmovies.com</a></p>
+                        </div>
 
-                            <p className="footer-company-about">
+                    </div>
 
-                                <span>Sobre la página</span>
+                    <div className="footer-right">
 
-                                Podrá ver la información, críticas y ranking de tus películas favoritas.
-                            </p>
+                        <p className="footer-company-about">
 
-                            <div className="footer-icons">
+                            <span>Sobre la página</span>
 
-                                <a href="#6"><i className="fa fa-facebook"></i></a>
-                                <a href="#7"><i className="fa fa-twitter"></i></a>
-                                <a href="#8"><i className="fa fa-linkedin"></i></a>
-                                <a href="#9"><i className="fa fa-github"></i></a>
+                            Podrá ver la información, críticas y ranking de tus películas favoritas.
+                        </p>
 
-                            </div>
+                        <div className="footer-icons">
+
+                            <a href="#6"><i className="fa fa-facebook"></i></a>
+                            <a href="#7"><i className="fa fa-twitter"></i></a>
+                            <a href="#8"><i className="fa fa-linkedin"></i></a>
+                            <a href="#9"><i className="fa fa-github"></i></a>
 
                         </div>
 
-                        </footer>
-            </div>                   
-        )
-    }
+                    </div>
+
+                    </footer>
+        </div>                   
+    )
 }
 
 export default Footer;
