@@ -1,6 +1,7 @@
 import Header from './components/header';
 import Footer from './components/footer';
-import ImageList from './components/imageList';
+import Banner from './components/banner';
+import Information from './components/information'
 import Body from './components/body';
 import '../src/styles/App.css'
 
@@ -9,7 +10,8 @@ function App() {
   return (
     <div className = "App">
       <Header />
-      <ImageList />
+      <Banner />
+      <Information />
       <Body />
       <Footer />
     </div>
