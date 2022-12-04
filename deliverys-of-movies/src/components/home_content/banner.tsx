@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import alita from '../assets/video/Alita.mp4'
-import padrino from '../assets/video/Padrino.mp4'
-import it from '../assets/video/It.mp4'
+import alita from '../../assets/video/Alita.mp4'
+import padrino from '../../assets/video/Padrino.mp4'
+import it from '../../assets/video/It.mp4'
 
 function Banner() {
 

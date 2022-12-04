@@ -5,7 +5,7 @@ import fetchShows from "../../services/shows";
 
 export default function Shows(){
 
-    const IMAGE_PATH = 'https://image.tmdb.org/t/p/original'
+    const IMAGE_PATH = 'https://image.tmdb.org/t/p/original/'
     const [shows, setShows] = useState<Array<Show>>([]);
 
     const listShows = async () => {

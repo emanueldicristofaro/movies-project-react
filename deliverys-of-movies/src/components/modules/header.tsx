@@ -1,4 +1,4 @@
-import logo from '../assets/img/banner.png';
+import logo from '../../assets/img/banner.png';
     
 function Header(){
     /**

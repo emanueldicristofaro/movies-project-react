@@ -1,19 +1,20 @@
-import Header from './components/header';
-import Footer from './components/footer';
-import Banner from './components/banner';
-import Information from './components/information'
-import Body from './components/body';
-import '../src/styles/App.css'
+import '../src/styles/app.scss'
+import '../src/styles/card_movie.scss'
+import Home from './components/pages/home'
+import MovieInfo from './components/pages/movies_info'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
+
     <div className = "App">
-      <Header />
-      <Banner />
-      <Information />
-      <Body />
-      <Footer />
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="movie_info/:id" element={<MovieInfo />} />
+          </Routes>
+      </BrowserRouter>   
     </div>
   )
 }

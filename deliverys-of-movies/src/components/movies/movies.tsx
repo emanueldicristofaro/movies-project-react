@@ -5,7 +5,7 @@ import Movie from "../../inferfaces"
 
 export default function Movies(){
 
-    const IMAGE_PATH = 'https://image.tmdb.org/t/p/original'
+    const IMAGE_PATH = 'https://image.tmdb.org/t/p/original/'
     const [movies, setMovies] = useState<Array<Movie>>([])
 
     const listMovies = async () => {
@@ -31,7 +31,7 @@ export default function Movies(){
                         <img src={`${IMAGE_PATH + mov.poster_path}`} alt="" height={700} width="100%"/>
                         <Carousel.Caption>
                             <div className="className">
-                                <h5>{mov.title}</h5>
+                                <h5><a href={`movie_info/${mov.id}`}>{mov.title}</a></h5>
                                 <p>⭐{mov.vote_average}</p>
                             </div>
                         </Carousel.Caption>

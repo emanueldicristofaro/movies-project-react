@@ -13,3 +13,12 @@ export default interface Show {
     vote_average: number
     poster_path: string
 }
+
+export default interface MovieInfo {
+
+    id: number
+    name: string
+    overview: string
+    vote_average: number
+    poster_path: string
+}

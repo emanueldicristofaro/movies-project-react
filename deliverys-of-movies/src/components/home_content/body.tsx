@@ -1,5 +1,5 @@
-import Movies from "./movies/movies"
-import Shows from "./shows/shows"
+import Movies from "../movies/movies"
+import Shows from "../shows/shows"
 
 function Body () {
 
