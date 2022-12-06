@@ -14,11 +14,10 @@ export default interface Show {
     poster_path: string
 }
 
-export default interface MovieInfo {
+export default interface MovieGenre {
 
     id: number
-    name: string
-    overview: string
+    title: string
     vote_average: number
     poster_path: string
 }

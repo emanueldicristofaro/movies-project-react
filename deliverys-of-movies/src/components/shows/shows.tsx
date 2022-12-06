@@ -31,7 +31,7 @@ export default function Shows(){
                         <img src={`${IMAGE_PATH + sho.poster_path}`} alt="" height={700} width="100%"/>
                         <Carousel.Caption>
                             <div className="className">
-                                <h5>{sho.name}</h5>
+                                <h5><a href={`show_info/${sho.id}`}>{sho.name}</a></h5>
                                 <p>⭐{sho.vote_average}</p>
                             </div>
                         </Carousel.Caption>
