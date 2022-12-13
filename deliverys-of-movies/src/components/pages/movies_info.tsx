@@ -5,6 +5,7 @@ import ListMoviesGenre from '../../services/movies_genre'
 import MovieGenre from '../../inferfaces'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
+import { Carousel } from "react-bootstrap";
 
 function movies_info(){
 
@@ -37,7 +38,22 @@ function movies_info(){
 
         <div id="movies_info">
 
-            <Header />
+        <Header />
+
+            <Carousel>
+                {movies.map((mov) =>(
+                <Carousel.Item key={mov.id}>
+                    <img src={`${IMAGE_PATH + mov.backdrop_path}`} alt="" height={700} width="100%"/>
+                    <Carousel.Caption>
+                        <div className="caption">
+                            <h5>{mov.title}</h5>
+                            <p>⭐{mov.vote_average}</p>
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                ))}
+            </Carousel>
+                  
             <div id="card">
                 <div className="movie_card" id="bright">
                 <div className="info_section">
@@ -55,7 +71,8 @@ function movies_info(){
                 <img className="blur_back" src={`${IMAGE_PATH + movie.backdrop_path}`}/>
                 </div>        
             </div>
-            <Footer />
+
+        <Footer />
         </div>
     )  
 }

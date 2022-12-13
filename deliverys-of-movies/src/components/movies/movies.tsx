@@ -30,7 +30,7 @@ export default function Movies(){
                     <Carousel.Item key={mov.id}>
                         <img src={`${IMAGE_PATH + mov.poster_path}`} alt="" height={700} width="100%"/>
                         <Carousel.Caption>
-                            <div className="className">
+                            <div className="caption">
                                 <h5><a href={`movie_info/${mov.id}`}>{mov.title}</a></h5>
                                 <p>⭐{mov.vote_average}</p>
                             </div>
